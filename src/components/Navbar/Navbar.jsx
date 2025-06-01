@@ -27,8 +27,8 @@ const Navbar = () => {
             <Link to="/contact" className="text-gray-700 hover:text-blue-600">
               Contact
             </Link>
-            <Link to="/add-blog" className="text-gray-700 hover:text-blue-600">
-              Add Blog
+            <Link to="/admin" className="text-gray-700 hover:text-blue-600">
+              Admin
             </Link>
             <Link to="/donate" className="bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700">
               Donate
@@ -62,6 +62,7 @@ const Navbar = () => {
           <Link to="/categories" className="block text-gray-700 hover:text-blue-600">Categories</Link>
           <Link to="/about" className="block text-gray-700 hover:text-blue-600">About</Link>
           <Link to="/contact" className="block text-gray-700 hover:text-blue-600">Contact</Link>
+          <Link to="/admin" className="block text-gray-700 hover:text-blue-600">Admin</Link>
           <Link to="/donate" className="inline-block mt-2 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700">
             Donate
           </Link>

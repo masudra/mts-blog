@@ -15,13 +15,13 @@ const HomeSlider = () => {
       id: 2,
       title: "Discover Diverse Categories",
       desc: "Technology, lifestyle, travel, and more — all in one blog.",
-      img: "https://source.unsplash.com/1600x600/?technology,writing",
+      img: "https://i.ibb.co/twyZLk9Q/1641200554997.jpg",
     },
     {
       id: 3,
       title: "Join the Conversation",
       desc: "Your voice matters — engage, comment, and connect.",
-      img: "https://source.unsplash.com/1600x600/?community,people",
+      img: "https://i.ibb.co/TxZgkXK4/How-to-Start-a-Personal-Blog.webp",
     },
   ];
 
