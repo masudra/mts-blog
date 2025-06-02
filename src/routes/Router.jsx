@@ -5,6 +5,7 @@ import SingleBlog from "../components/SingleBlog";
 import AdminLayout from "../components/AdminDashbord/AdminLayout";
 import AllBlogs from "../components/AdminDashbord/AllBlogs";
 import AddBlog from "../components/AdminDashbord/AddBlog";
+import EditBlog from "../components/AdminDashbord/EditBlog";
 
 // Admin Layout & Pages
 
@@ -18,7 +19,7 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-     
+
       {
         path: "/blogs/:id",
         element: <SingleBlog />,
@@ -27,7 +28,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/admin",
-    element: <AdminLayout />, 
+    element: <AdminLayout />,
     children: [
 
       {
@@ -36,7 +37,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/admin/add-blog",
-        element: <AddBlog/>,
+        element: <AddBlog />,
+      },
+      {
+        path: "/admin/blogs/edit/:id",
+        element: <EditBlog />,
       },
     ],
   },

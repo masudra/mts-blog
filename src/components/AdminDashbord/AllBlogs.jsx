@@ -7,7 +7,7 @@ export default function AllBlogs() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/blogs")
+    fetch("https://mts-blog-backend.vercel.app/blogs")
       .then(res => res.json())
       .then(data => {
         setBlogs(data);
@@ -25,7 +25,7 @@ export default function AllBlogs() {
     if (!confirmDelete) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/blogs/${id}`, {
+      const res = await fetch(`https://mts-blog-backend.vercel.app/blogs/${id}`, {
         method: "DELETE",
       });
 
@@ -55,7 +55,10 @@ export default function AllBlogs() {
             Filter ▼
           </button>
           <button className="bg-black text-white px-4 py-1.5 rounded text-sm font-medium">
-            + Add Article
+            <Link to="/admin/add-blog" className="flex items-center gap-2 hover:underline">
+              + Add Article
+            </Link>
+
           </button>
         </div>
       </div>

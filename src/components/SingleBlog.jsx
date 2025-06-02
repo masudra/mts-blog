@@ -11,7 +11,7 @@ const SingleBlog = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/blogs/${id}`);
+        const res = await axios.get(`https://mts-blog-backend.vercel.app/blogs/${id}`);
         setBlog(res.data);
       } catch (err) {
         setError("Failed to fetch blog");
